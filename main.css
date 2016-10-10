@@ -65,4 +65,6 @@ body {background: LightCyan;
 	#pageFooter{
 		padding: 0 400px;
 	}
-	
+	#image{
+		float:right;
+	}
