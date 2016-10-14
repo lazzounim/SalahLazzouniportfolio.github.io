@@ -68,3 +68,8 @@ body {background: LightCyan;
 	#image{
 		float:right;
 	}
+	#aside{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:20px;
+		text-align:right;
+	}
