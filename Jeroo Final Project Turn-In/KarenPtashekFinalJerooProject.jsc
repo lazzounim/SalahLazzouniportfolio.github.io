@@ -1,0 +1,44 @@
+@Java
+//(c) A+ Computer Science
+
+method side()
+{
+while(isClear(AHEAD))
+
+{
+plant();
+if(isClear(AHEAD))
+
+{
+hop();
+}
+}
+if(!isFlower(AHEAD))
+
+{
+turn(RIGHT);
+side();
+}
+if(!isFlower(AHEAD))
+
+{
+turn(LEFT);
+side();
+}
+if(!isWater(AHEAD))
+
+{
+turn(RIGHT);
+side();
+}
+
+}
+@@
+//(c) A+ Computer Science  
+
+method main()
+{
+Jeroo bob = new Jeroo(0,5,200);
+bob.side();
+while(bob.is
+} 

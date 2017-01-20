@@ -1,0 +1,32 @@
+@Java
+method clearFence()
+{
+
+}
+
+method pickFlowers()
+{
+
+}
+method clearNets()
+{
+
+}
+
+method flowerBox()
+{
+
+}
+method fleeEast()
+{
+
+}
+@@
+method main()
+{
+   Jeroo a= new Jeroo();
+   Jeroo b= new Jeroo(10,10);
+   Jeroo c= new Jeroo(12,12);
+   Jeroo d= new Jeroo(13,11);
+   
+}

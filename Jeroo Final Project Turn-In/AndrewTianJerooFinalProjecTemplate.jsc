@@ -1,0 +1,31 @@
+@Java
+method escapeFortPrison()
+{
+}
+method collectWallFlowers()
+{
+}
+method breakWall()
+{
+}
+method collectCourtYardFlowers()
+{
+}
+method breakCourtYard()
+{
+}
+@@
+method main()
+{
+   Jeroo Prisoner1 = new Jeroo(3,3);
+   Jeroo Prisoner2 = new Jeroo(3,20);
+   Jeroo Prisoner3 = new Jeroo(20,3);
+   Jeroo Prisoner4 = new Jeroo(20,20);
+   
+   Prisoner1.turn(RIGHT);
+   Prisoner1.turn(RIGHT);
+   
+   Prisoner2.turn(LEFT);
+   
+   Prisoner3.turn(RIGHT);
+}

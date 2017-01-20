@@ -1,0 +1,25 @@
+@Java
+method pickRow()
+{
+   
+}
+
+method goDown()
+{
+   
+}
+
+method goUp()
+{
+   
+}
+
+method plantRow()
+{
+   
+}
+@@
+method main()
+{
+  Jeroo gabi = new Jeroo(0,0);
+}

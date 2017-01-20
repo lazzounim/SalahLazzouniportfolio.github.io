@@ -1,0 +1,7 @@
+@Java
+
+@@
+method main()
+{
+   Jeroo joe = new Jeroo(10,10,100);
+}

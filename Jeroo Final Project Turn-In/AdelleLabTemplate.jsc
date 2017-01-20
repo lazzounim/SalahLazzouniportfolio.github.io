@@ -1,0 +1,25 @@
+@Java
+method run();
+{
+   if(isNet(AHEAD))
+   {
+      //toss and hop
+   }
+   if(isFlower(AHEAD))
+   {
+       //pick and hop
+   }
+   if(isWater(AHEAD))
+   {
+       //turn right and hop
+   }
+    if(isClear(AHEAD))
+   {
+      //turn hop
+   }
+}
+@@
+method main()
+{
+  Jeroo bobby = new Jeroo(4,0,NORTH,50);  
+}

@@ -1,0 +1,24 @@
+@Java
+method pickFlowers()
+{
+
+}
+
+method plantFlowers()
+{
+
+}
+
+method run()
+{
+
+}
+@@
+// 1. Pick all of the flowers along the border.
+// 2. Plant a flower directly across each square of water. Plant a flower directly 2 squares across each net.
+
+method main()
+{
+   Jeroo Gracie = new Jeroo();
+   Gracie.run();
+}

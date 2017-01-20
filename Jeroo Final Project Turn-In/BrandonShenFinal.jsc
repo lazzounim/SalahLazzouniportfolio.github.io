@@ -1,0 +1,9 @@
+@Java
+method go()
+{
+}
+@@
+method main()
+{
+Jeroo bob = new Jeroo(0,1,0);
+}

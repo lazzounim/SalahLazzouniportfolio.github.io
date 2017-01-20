@@ -1,0 +1,15 @@
+@Java
+method navigateMaze()
+
+method destroyFence()
+
+method Escape()
+@@
+method main()
+{
+   Jeroo Eddy = new Jeroo(0,0);
+   Jeroo Ed = new Jeroo(22,9);
+   Jeroo Edd = new Jeroo(22,10);
+   Jeroo Eddie = new Jeroo(22,11);
+   
+}

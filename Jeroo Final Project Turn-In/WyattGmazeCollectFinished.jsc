@@ -1,0 +1,51 @@
+@Java
+// (c) Wyatt makes a Jeroo game
+
+method go()
+{
+   if( isClear(AHEAD))
+      {
+         hop();
+      }
+   if( isWater(AHEAD))
+      {
+         avoid();
+      }
+   if( isFlower(AHEAD))
+      {
+         hop();
+         pick();
+      }
+   if( isNet(AHEAD))
+      {
+         toss();
+      }
+}
+
+method avoid()
+{
+  if(isWater(AHEAD) && isWater(RIGHT) && isWater(LEFT))
+      {
+         toss();
+      }
+   if(isWater(AHEAD) && isWater(LEFT))
+      {
+         turn(RIGHT);
+      }
+   if(isWater(AHEAD) && isWater(RIGHT))
+      {
+         turn(LEFT);
+      }
+}
+@@
+// (c) Wyatt makes a Jeroo game
+
+method main()
+{
+Jeroo bob = new Jeroo (0,0,1);
+while(bob.hasFlower())
+   {
+      bob.go();
+   }
+bob.turn(LEFT);
+}

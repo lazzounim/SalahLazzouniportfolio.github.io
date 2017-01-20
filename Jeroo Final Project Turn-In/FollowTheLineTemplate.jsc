@@ -1,0 +1,24 @@
+@Java
+method go(){
+
+}
+
+method fix(){
+
+}
+@@
+method main()
+{
+   Jeroo bob = new Jeroo();
+   bob.hop(23);
+   bob.turn(RIGHT);
+   bob.hop(21);
+   bob.turn(RIGHT);
+   bob.hop();
+   bob.turn(LEFT);
+   bob.hop();
+   bob.turn(RIGHT);
+   bob.turn(RIGHT);
+   bob.turn(RIGHT);
+   
+}

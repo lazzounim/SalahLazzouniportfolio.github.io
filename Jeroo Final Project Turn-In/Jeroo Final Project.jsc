@@ -1,0 +1,12 @@
+@Java
+
+@@
+//(c)A+ Computer Science
+
+method main()
+{
+   Jeroo bob=new Jeroo(22,0,1);
+   Jeroo amy=new Jeroo(23,22,1);
+   Jeroo sam=new Jeroo(1,23,1);
+   Jeroo cal=new Jeroo(0,1,1);
+}

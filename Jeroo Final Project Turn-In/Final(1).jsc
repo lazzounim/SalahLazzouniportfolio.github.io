@@ -1,0 +1,90 @@
+@Java
+method go()
+{
+   while(!isFlower(HERE))
+   {
+      if(isClear(AHEAD) || isFlower(AHEAD))
+      {
+         hop();
+      }
+      
+      if((isNet(AHEAD) && isNet(LEFT) && isNet(RIGHT)))
+      {
+         toss();
+      }
+      
+      if((isNet(AHEAD) && isNet(RIGHT)))
+      {
+         turn(LEFT);
+      }
+      
+      if((isNet(AHEAD) && isNet(LEFT)))
+      {
+         turn(RIGHT);
+      }
+      
+      if(isNet(AHEAD))
+      {
+         turn(RIGHT);
+      }
+      
+   }
+   
+   if(isFlower(HERE))
+   {
+      turn(RIGHT);
+      while(!isNet(AHEAD))
+      {
+         if(!isNet(AHEAD) )
+         {
+            hop();
+         }
+         
+         if(isFlower(HERE))
+         {
+            pick();
+         }
+      }
+   }
+  
+   if(isNet(AHEAD))
+   {
+      turn(RIGHT);
+      while((isNet(AHEAD) || isClear(AHEAD) || !isWater(AHEAD) && !isJeroo(AHEAD)))
+      {
+         if(isNet(AHEAD))
+         {
+            toss();
+            hop();
+         }
+        
+         if(isFlower(LEFT))
+         {
+            turn(LEFT);
+         }
+          
+         if(isFlower(AHEAD))
+         {
+            hop();
+         }
+         
+         if(isClear(AHEAD))
+         {
+            hop();
+         }   
+      }      
+   }
+}
+@@
+method main()
+{
+   Jeroo bob = new Jeroo(5,1,SOUTH,2);
+   Jeroo bo = new Jeroo(5,3,SOUTH,2);
+   Jeroo bill = new Jeroo(5,4,EAST,2);
+   Jeroo fred = new Jeroo(1,4,EAST,2);
+   
+   bob.go();
+   bo.go();
+   bill.go();
+   fred.go();
+}

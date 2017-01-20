@@ -1,0 +1,21 @@
+@Java
+method mazerunner()
+{
+}
+
+method turnWest()
+{
+}
+
+method turnEast()
+{
+}
+
+method stop()
+{
+}
+@@
+method main()
+{
+Jeroo bob = new Jeroo();
+}

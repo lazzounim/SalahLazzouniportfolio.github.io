@@ -1,0 +1,14 @@
+@Java
+
+method go()
+   {
+   }
+@@
+//--- ALWAYS USE SAVE AS ---
+
+method main()
+{
+
+} 
+
+//===== end of method main() =====

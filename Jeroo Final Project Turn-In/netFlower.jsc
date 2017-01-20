@@ -1,0 +1,26 @@
+@Java
+method enterBox()
+{
+}
+
+
+
+method pickFlower()
+{
+}
+
+
+method plantFlower()
+{
+}
+@@
+//(c) A+ Computer Science
+
+method enterBox()
+{
+   Jeroo ju = new Jeroo();
+   Jeroo kim = new Jeroo();
+   Jeroo sue = new Jeroo();
+   Jeroo bob = new Jeroo();
+   
+}

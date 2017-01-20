@@ -1,0 +1,48 @@
+@Java
+method nets()
+{ 
+}
+
+method go()
+{
+
+}
+
+method noNets()
+{
+
+}
+method corner()
+{
+}
+method ahead()
+{
+
+}
+
+method d()
+{
+}
+
+method o()
+{
+
+}
+
+method m()
+{
+
+}
+@@
+
+method main()
+{ Jeroo dom = new Jeroo(2,0,100);
+Jeroo nic = new Jeroo(3,7,100);
+Jeroo jon = new Jeroo(2,16,100);
+
+
+
+
+
+
+}

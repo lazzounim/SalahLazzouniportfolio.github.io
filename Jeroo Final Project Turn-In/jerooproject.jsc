@@ -1,0 +1,23 @@
+@Java
+method go()
+{
+   if(isClear(AHEAD))
+   {
+      hop();
+   }
+   if((isWater(AHEAD)&&(LEFT))
+   {
+      turn(RIGHT);
+   }
+   if(isWater(AHEAD)&&(RIGHT))
+   {
+      turn(LEFT);
+   }
+}
+@@
+method main()
+{
+   Jeroo bob = new Jeroo();
+   
+   
+}

@@ -1,0 +1,10 @@
+@Java
+method run()
+{
+
+}
+@@
+method main()
+{
+   Jeroo bob = new Jeroo();
+}

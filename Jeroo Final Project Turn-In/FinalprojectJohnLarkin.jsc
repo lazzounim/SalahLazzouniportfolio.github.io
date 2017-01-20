@@ -1,0 +1,33 @@
+@Java
+method checkerboard()
+{
+
+}
+
+
+method planteast()
+{
+
+}
+
+method plantwest()
+{
+
+}
+
+method onerow()
+{
+
+}
+
+method clearboard()
+{
+
+}
+@@
+method main()
+{
+   Jeroo bip = new Jeroo(0,0,EAST,42000);
+   
+bip.checkerboard();
+}

@@ -1,0 +1,81 @@
+@Java
+method fullMaze()
+      {
+      maze1();
+      pickLeftFlower();
+      maze2();
+      } 
+   method pickLeftFlower()
+      {
+      turn(LEFT);
+      hop();
+      pick();
+      turn(LEFT);
+      turn(LEFT);
+      hop();
+      turn(RIGHT);
+      }
+method maze1()
+      {
+      while  (!(isWater(AHEAD) && isWater(RIGHT) && isFlower(LEFT)))
+         {
+         rightTurn1();
+         leftTurn1();
+         hop();
+         }
+      }
+   method rightTurn1()
+      {
+      if (isFlower(AHEAD) && isClear(RIGHT))
+         {
+         turn(RIGHT);
+         }
+      }
+   method leftTurn1()
+      {
+      if (isWater(AHEAD) && isClear(LEFT))
+         {
+         turn(LEFT);
+         }
+      }
+      
+method maze2()
+      {
+      while  (!(isWater(AHEAD) && isWater(RIGHT) && isWater(LEFT)))
+         {
+         rightTurn2();
+         leftTurn2();
+         specialCase();
+         if (!(isWater(AHEAD) && isWater(RIGHT) && isWater(LEFT)))
+            {
+            hop();
+            }
+         }
+      }
+   method rightTurn2()
+      {
+      if (isWater(AHEAD) && isClear(RIGHT) && !(isFlower(RIGHT) && isClear(LEFT)))
+         {
+         turn(RIGHT);
+         }
+      }
+   method leftTurn2()
+      {
+      if (isFlower(AHEAD) && isClear(LEFT))
+         {
+         turn(LEFT);
+         }
+      }
+   method specialCase()
+      {
+      if (isClear(LEFT) && isWater(AHEAD) && isFlower(RIGHT))
+         {
+         turn(LEFT);
+         }
+      }
+@@
+method main()
+{
+Jeroo tom = new Jeroo(0,0,EAST);
+tom.fullMaze();
+}

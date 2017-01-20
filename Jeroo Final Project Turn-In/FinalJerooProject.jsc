@@ -1,0 +1,40 @@
+@Java
+
+method facePath()
+{
+   
+}
+
+method solveMaze()
+{
+   if( isClear(AHEAD) )
+   {
+      hop();
+   }
+   if( isClear(LEFT) )
+   {
+      turn(LEFT);
+      hop();
+   }
+   if( isClear(RIGHT) )
+   {
+      turn(RIGHT);
+      hop();
+   }
+   if( isClear(LEFT) )
+   {
+      turn(LEFT);
+      hop();
+   }
+}
+
+@@
+
+method main()
+{
+   Jeroo bob = new Jeroo();
+   while(bob.isClear(AHEAD) )
+   {
+      bob.solveMaze();
+   }
+}

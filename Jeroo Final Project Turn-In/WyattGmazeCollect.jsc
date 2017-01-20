@@ -1,0 +1,16 @@
+@Java
+// (c) Wyatt makes a Jeroo game
+
+method go()
+{
+
+
+}
+@@
+// (c) Wyatt makes a Jeroo game
+
+method main()
+{
+Jeroo bob = new Jeroo (0,0,1);
+
+}

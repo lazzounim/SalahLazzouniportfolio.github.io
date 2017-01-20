@@ -1,0 +1,16 @@
+@Java
+method solveMaze()
+{
+
+}
+
+method goBack()
+{
+
+}
+@@
+method main()
+{
+   Jeroo bobette = new Jeroo(71);
+   
+}

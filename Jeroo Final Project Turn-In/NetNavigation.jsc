@@ -1,0 +1,24 @@
+@Java
+//Check if there's water ahead
+method checkWater()
+{
+   
+}
+
+//Check if there's a net ahead
+method checkNet()
+{
+   
+}
+
+//Check if there's a flower here
+method checkFlower()
+{
+   
+}
+@@
+method main()
+{
+   Jeroo bleh = new Jeroo(0,0,145);
+   
+}

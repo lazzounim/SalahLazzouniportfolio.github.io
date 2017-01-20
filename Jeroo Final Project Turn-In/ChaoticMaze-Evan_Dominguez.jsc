@@ -1,0 +1,17 @@
+@Java
+method fullMaze()
+   {
+   }
+
+method maze1()
+   {
+   }
+
+method maze2()
+   {
+   }
+@@
+method main()
+{
+Jeroo tom = new Jeroo();
+}

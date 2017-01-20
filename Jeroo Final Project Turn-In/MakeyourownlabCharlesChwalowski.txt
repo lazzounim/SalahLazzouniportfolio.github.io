@@ -1,0 +1,12 @@
+﻿Lab goal: To analyze a problem and involve branching and decision making in creating a solution for the problem. You must figure out how to pick all the flowers and know when to hop and stop. You must create commands to solve this problem.
+
+
+Lab Description: This lab requires you to use a wide variety of commands from all 4 units.This lab will require use of while statements along with if and basic methods with simple commands. You must end this lab with all flowers gone
+
+
+
+
+Starting Screen: Hey thats pretty good.png 
+Files Needed:
+jev for jeroo project charles chwalowski.jev
+jsc for jeroo project charles chwalowski.jsc

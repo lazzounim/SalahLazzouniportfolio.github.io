@@ -1,0 +1,20 @@
+@Java
+method go()
+{
+}
+@@
+method main()
+{
+   Jeroo bob = new Jeroo(1,0);
+}
+
+
+
+
+
+
+
+
+
+
+

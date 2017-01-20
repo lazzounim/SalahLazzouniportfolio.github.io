@@ -1,0 +1,87 @@
+@Java
+method solveMaze () {
+   while(isClear(AHEAD) && ! isFlower(HERE)) {
+      while(isClear(AHEAD)) {
+         checkFlower();
+         hop();
+      }
+      if (! isFlower(LEFT) || ! isFlower(AHEAD)) {
+         checkFlower();
+      } else {
+         writeBox();
+      }
+      findPath();
+   }
+}
+
+method turn180() {
+   turn(LEFT);
+   turn(LEFT);
+}
+
+method checkFlower () {
+   if (isFlower(LEFT)) {
+      turn(LEFT);
+      hop();
+      pick();
+      turn180();
+      hop();
+      turn(LEFT);
+   }
+   if (isFlower(RIGHT)) {
+      turn(RIGHT);
+      hop();
+      pick();
+      turn180();
+      hop();
+      turn(RIGHT);
+   }
+   if (isFlower(AHEAD) && ! isFlower(HERE)) {
+      hop();
+      pick();
+      turn180();
+      hop();
+      turn180();
+   }
+}
+
+method findPath() {
+   if(isClear(LEFT)) {
+      turn(LEFT);
+   } else if(isClear(RIGHT)) {
+      turn(RIGHT);
+   } else if(isNet(AHEAD) && isNet(LEFT) && isNet(RIGHT)) {
+      toss();
+      hop();
+   } 
+}
+
+method writeBox() {
+   turn(LEFT);
+   hop();
+   pick();
+   turn(RIGHT);
+   hop();
+   pick();
+   turn(RIGHT);
+   hop();
+   pick();
+   hop();
+   pick();
+   turn180();
+   
+   while(! isFlower(AHEAD)) {
+      while(! isWater(AHEAD)) {
+         plant();
+         hop();
+      }
+      turn(RIGHT);
+   }
+}
+@@
+method main () {
+
+   Jeroo jeff = new Jeroo(0,0,EAST,31);
+   
+   jeff.solveMaze();
+}
